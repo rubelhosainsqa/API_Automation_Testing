@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-07T10:57:34.740916" rpa="false" schemaversion="5">
+<suite id="s1" name="All Test Cases" source="D:\API_Testing\Rest_API_Testing_Using_Robot_Framework\Test_Cases\All_Test_Cases.robot">
+<test id="s1-t1" name="TC1_Return the details of all students (GET)" line="13">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:35.073473" level="INFO">Creating Session using : alias=my_session, url=https://thetestingworldapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>my_session</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-11-07T10:57:35.073280" elapsed="0.000349"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:39.176329" level="INFO">GET Request : url=https://thetestingworldapi.com/api/studentsDetails 
+ path_url=/api/studentsDetails 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-11-07T10:57:39.177223" level="INFO">GET Response : url=https://thetestingworldapi.com/api/studentsDetails 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Thu, 07 Nov 2024 04:57:33 GMT', 'Content-Length': '11113'} 
+ body=[{"id":10492732,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492731,"first_name":"Darian","middle_name":"DVM","last_name":"Waters","date_of_birth":"10-12-1998"},{"id":10492730,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492729,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492728,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492727,"first_name":"Maiya","middle_name":"Rohan","last_name":"Christiansen","date_of_birth":"2024-11-07"},{"id":10492726,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492725,"first_name":"Alisha","middle_name":"Anjum","last_name":"Dola","date_of_birth":"01-01-2000"},{"id":10492724,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492723,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492722,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492721,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492720,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492719,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492718,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492717,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492716,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492715,"first_name":"Mr.","middle_name":"Creola","last_name":"Nader","date_of_birth":"12/29/1999"},{"id":10492714,"first_name":"Hyman","middle_name":"Schinner","last_name":"Kovacek","date_of_birth":"2024-11-07"},{"id":10492713,"first_name":"Alena","middle_name":"MD","last_name":"Kautzer","date_of_birth":"10-12-1998"},{"id":10492712,"first_name":"Oswald","middle_name":"I","last_name":"Tromp","date_of_birth":"10-12-1998"},{"id":10492711,"first_name":"Rubel","middle_name":"Amari","last_name":"Zboncak","date_of_birth":"05-03-1997"},{"id":10492710,"first_name":"Miss","middle_name":"Junius","last_name":"Carter","date_of_birth":"05-04-1992"},{"id":10492709,"first_name":"Mr.","middle_name":"Emie","last_name":"Schumm","date_of_birth":"07-01-1990"},{"id":10492708,"first_name":"Ms.","middle_name":"Hiram","last_name":"Crooks","date_of_birth":"07-03-1998"},{"id":10492707,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492706,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492705,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492704,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492703,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492702,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492701,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492700,"first_name":"Miss","middle_name":"Amparo","last_name":"Auer","date_of_birth":"05-06-1993"},{"id":10492699,"first_name":"Mrs.","middle_name":"Crystel","last_name":"Lubowitz","date_of_birth":"01-00-1996"},{"id":10492698,"first_name":"Ms.","middle_name":"Brenden","last_name":"Brakus","date_of_birth":"01-08-1997"},{"id":10492697,"first_name":"Mr.","middle_name":"Miller","last_name":"Stracke","date_of_birth":"06-00-1992"},{"id":10492696,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492695,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492694,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492693,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492692,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492691,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492690,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492689,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492688,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492687,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492686,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492685,"first_name":"Dr.","middle_name":"Margot","last_name":"Wiegand","date_of_birth":"09-08-1998"},{"id":10492684,"first_name":"Dr.","middle_name":"Aidan","last_name":"Hand","date_of_birth":"09-09-1995"},{"id":10492683,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492682,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492681,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492680,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492679,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492678,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492677,"first_name":"sample string 2","middle_name":"sample string 2","last_name":"sample string 2","date_of_birth":"sample string 2"},{"id":10492676,"first_name":"Ms.","middle_name":"Colby","last_name":"Hammes","date_of_birth":"06-03-1999"},{"id":10492675,"first_name":"Ms.","middle_name":"Keenan","last_name":"Mraz","date_of_birth":"05-09-1992"},{"id":10492674,"first_name":"Mr.","middle_name":"Sydni","last_name":"Herman","date_of_birth":"03-08-1995"},{"id":10492673,"first_name":"Mrs.","middle_name":"Madie","last_name":"Crist","date_of_birth":"01-00-1999"},{"id":10492672,"first_name":"Mr.","middle_name":"Katlyn","last_name":"Gleason","date_of_birth":"05-06-1994"},{"id":10492671,"first_name":"Mr.","middle_name":"Dean","last_name":"Weber","date_of_birth":"08-06-1991"},{"id":10492670,"first_name":"Mrs.","middle_name":"Stacey","last_name":"Schaden","date_of_birth":"03-07-1998"},{"id":10492669,"first_name":"Dr.","middle_name":"Evelyn","last_name":"Kunde","date_of_birth":"04-00-1998"},{"id":10492668,"first_name":"Mrs.","middle_name":"Natalia","last_name":"Rau","date_of_birth":"01-01-1991"},{"id":10492667,"first_name":"Miss","middle_name":"Neil","last_name":"Runte","date_of_birth":"07-06-1995"},{"id":10492666,"first_name":"Ms.","middle_name":"Raoul","last_name":"Volkman","date_of_birth":"06-02-1995"},{"id":10492665,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492664,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492663,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492662,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492661,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492660,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492659,"first_name":"Testing1","middle_name":"K1","last_name":"World1","date_of_birth":"sample string 6"},{"id":10492658,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492657,"first_name":"SdddddPradddsad","middle_name":"Pras","last_name":"vara","date_of_birth":"12/12/1978"},{"id":10492656,"first_name":"Vernon","middle_name":"Wintheiser","last_name":"McCullough","date_of_birth":"2024-12-11"},{"id":10492655,"first_name":"Sterling","middle_name":"Bode","last_name":"Larkin","date_of_birth":"2024-12-11"},{"id":10492654,"first_name":"Bret","middle_name":"Waelchi","last_name":"Klocko","date_of_birth":"2024-12-11"},{"id":10492653,"first_name":"Furkan","middle_name":"A","last_name":"Simsek","date_of_birth":"07/02/1996"},{"id":10492652,"first_name":"Deion","middle_name":"Ratke","last_name":"Volkman","date_of_birth":"2024-12-11"},{"id":10492651,"first_name":"Krystal","middle_name":"Weissnat","last_name":"Kling","date_of_birth":"2024-12-11"},{"id":10492650,"first_name":"Delaney","middle_name":"Harvey","last_name":"Hackett","date_of_birth":"1999-07-08"},{"id":10492649,"first_name":"Michael","middle_name":"Keeling","last_name":"Legros","date_of_birth":"1999-07-08"},{"id":10492648,"first_name":"Clarissa","middle_name":"Towne","last_name":"Bednar","date_of_birth":"2024-12-11"},{"id":10492647,"first_name":"Nathan","middle_name":"Prohaska","last_name":"Kohler","date_of_birth":"2024-12-11"},{"id":10492646,"first_name":"Edmond","middle_name":"Pouros","last_name":"Kemmer","date_of_birth":"2024-12-11"},{"id":10492645,"first_name":"Grover","middle_name":"Wyman","last_name":"Hermann","date_of_birth":"1999-07-08"},{"id":10492644,"first_name":"Jordane","middle_name":"Douglas","last_name":"Reilly","date_of_birth":"2024-12-11"},{"id":10492643,"first_name":"Jaden","middle_name":"Reichert","last_name":"Williamson","date_of_birth":"1999-07-08"},{"id":10492642,"firs... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2024-11-07T10:57:39.178655" level="INFO">C:\Users\Msi\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'thetestingworldapi.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-11-07T10:57:39.179881" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>my_session</arg>
+<arg>${ENDPOINT}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-11-07T10:57:35.073981" elapsed="4.106193"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code} #Log to console is used for show the response on the console</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.181407" elapsed="0.003210"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.186370" elapsed="0.017298"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.headers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.204110" elapsed="0.001086"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:39.206721" level="INFO">${status_code} = 200</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.205645" elapsed="0.001133"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.207251" elapsed="0.000315"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:39.208551" level="INFO">${body} = [{"id":10492732,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"},{"id":10492731,"first_name":"Darian","middle_name":"DVM","last_name":"Waters","date_of_bir...</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.207967" elapsed="0.000611"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${body}</arg>
+<arg>"SdddddPradddsad"</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.208847" elapsed="0.000174"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-11-07T10:57:39.210156" level="INFO">${contenttypevalue} = application/json; charset=utf-8</msg>
+<var>${contenttypevalue}</var>
+<arg>${response.headers}</arg>
+<arg>Content-Type</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.209617" elapsed="0.000565"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${contenttypevalue}</arg>
+<arg>application/json; charset=utf-8</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.210502" elapsed="0.000197"/>
+</kw>
+<status status="PASS" start="2024-11-07T10:57:35.071913" elapsed="4.139052"/>
+</test>
+<test id="s1-t2" name="TC2_Add a new student details (POST)" line="35">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:39.212379" level="INFO">Creating Session using : alias=mysession, url=https://thetestingworldapi.com, headers={'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${BASE_URL}</arg>
+<arg>headers=${AUTH_HEADER}</arg>
+<arg>verify=False</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-11-07T10:57:39.212067" elapsed="0.000533"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-11-07T10:57:39.213169" level="INFO">${payload} = {'first_name': 'Rubel', 'middle_name': 'Hosain', 'last_name': 'Riyon', 'date_of_birth': '06-03-1999'}</msg>
+<var>${payload}</var>
+<arg>first_name=Rubel</arg>
+<arg>middle_name=Hosain</arg>
+<arg>last_name=Riyon</arg>
+<arg>date_of_birth=06-03-1999</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.212883" elapsed="0.000313"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:39.840511" level="INFO">POST Request : url=https://thetestingworldapi.com/api/studentsDetails 
+ path_url=/api/studentsDetails 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '101'} 
+ body=b'{"first_name": "Rubel", "middle_name": "Hosain", "last_name": "Riyon", "date_of_birth": "06-03-1999"}' 
+ </msg>
+<msg time="2024-11-07T10:57:39.840922" level="INFO">POST Response : url=https://thetestingworldapi.com/api/studentsDetails 
+ status=201, reason=Created 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Location': 'https://thetestingworldapi.com/api/studentsDetails/10492733', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Thu, 07 Nov 2024 04:57:34 GMT', 'Content-Length': '108'} 
+ body={"id":10492733,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"} 
+ </msg>
+<msg time="2024-11-07T10:57:39.841211" level="INFO">C:\Users\Msi\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'thetestingworldapi.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-11-07T10:57:39.842817" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>${ENDPOINT}</arg>
+<arg>json=${payload}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.213455" elapsed="0.629626"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.844852" elapsed="0.002777"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.848824" elapsed="0.002140"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.headers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.852175" elapsed="0.003308"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:39.861329" level="INFO">${status_code} = 201</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.857275" elapsed="0.004316"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>201</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.863419" elapsed="0.001594"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:39.868875" level="INFO">${body} = {"id":10492733,"first_name":"Rubel","middle_name":"Hosain","last_name":"Riyon","date_of_birth":"06-03-1999"}</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.866573" elapsed="0.002336"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${body}</arg>
+<arg>"first_name":"Rubel"</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.869790" elapsed="0.000151"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-11-07T10:57:39.870843" level="INFO">${contenttypevalue} = application/json; charset=utf-8</msg>
+<var>${contenttypevalue}</var>
+<arg>${response.headers}</arg>
+<arg>Content-Type</arg>
+<arg>varify=false</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.870308" elapsed="0.000554"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${contenttypevalue}</arg>
+<arg>application/json; charset=utf-8</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.871176" elapsed="0.000193"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-11-07T10:57:39.872072" level="INFO">${contenttypevalue} = 108</msg>
+<var>${contenttypevalue}</var>
+<arg>${response.headers}</arg>
+<arg>Content-Length</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.871622" elapsed="0.000479"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${contenttypevalue}</arg>
+<arg>108</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.872827" elapsed="0.000831"/>
+</kw>
+<status status="PASS" start="2024-11-07T10:57:39.211674" elapsed="0.662719"/>
+</test>
+<test id="s1-t3" name="TC3_Update an existing student details based on student ID-10492725 (PUT)" line="62">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:39.879809" level="INFO">Creating Session using : alias=mysession, url=https://thetestingworldapi.com, headers={'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${BASE_URL}</arg>
+<arg>headers=${AUTH_HEADER}</arg>
+<arg>verify=False</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-11-07T10:57:39.879078" elapsed="0.000871"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-11-07T10:57:39.880506" level="INFO">${payload} = {'id': '10492725', 'first_name': 'Alisha', 'middle_name': 'Anjum', 'last_name': 'Dola', 'date_of_birth': '01-01-2000'}</msg>
+<var>${payload}</var>
+<arg>id=10492725</arg>
+<arg>first_name=Alisha</arg>
+<arg>middle_name=Anjum</arg>
+<arg>last_name=Dola</arg>
+<arg>date_of_birth=01-01-2000</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.880269" elapsed="0.000260"/>
+</kw>
+<kw name="PUT On Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:40.193327" level="INFO">PUT Request : url=https://thetestingworldapi.com/api/studentsDetails/10492725 
+ path_url=/api/studentsDetails/10492725 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '118'} 
+ body=b'{"id": "10492725", "first_name": "Alisha", "middle_name": "Anjum", "last_name": "Dola", "date_of_birth": "01-01-2000"}' 
+ </msg>
+<msg time="2024-11-07T10:57:40.193452" level="INFO">PUT Response : url=https://thetestingworldapi.com/api/studentsDetails/10492725 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Thu, 07 Nov 2024 04:57:34 GMT', 'Content-Length': '46'} 
+ body={"status":"true","msg":"update  data success"} 
+ </msg>
+<msg time="2024-11-07T10:57:40.193537" level="INFO">C:\Users\Msi\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'thetestingworldapi.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-11-07T10:57:40.194309" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/api/studentsDetails/10492725</arg>
+<arg>json=${payload}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-11-07T10:57:39.880813" elapsed="0.313627"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.195434" elapsed="0.000988"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.196937" elapsed="0.001170"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.headers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.198812" elapsed="0.000892"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:40.200560" level="INFO">${status_code} = 200</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.199981" elapsed="0.000609"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.200836" elapsed="0.000163"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:40.203620" level="INFO">${body} = {"status":"true","msg":"update  data success"}</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.201189" elapsed="0.002658"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${body}</arg>
+<arg>"update</arg>
+<arg>data success"</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.205387" elapsed="0.000246"/>
+</kw>
+<status status="PASS" start="2024-11-07T10:57:39.877906" elapsed="0.328098"/>
+</test>
+<test id="s1-t4" name="TC4_After update student details check the return details of a specific student based on student ID-10492725 (GET)" line="81">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:40.208901" level="INFO">Creating Session using : alias=my_session, url=https://thetestingworldapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>my_session</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-11-07T10:57:40.208538" elapsed="0.000602"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-11-07T10:57:40.553590" level="INFO">GET Request : url=https://thetestingworldapi.com/api/studentsDetails/10492725 
+ path_url=/api/studentsDetails/10492725 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-11-07T10:57:40.553946" level="INFO">GET Response : url=https://thetestingworldapi.com/api/studentsDetails/10492725 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Thu, 07 Nov 2024 04:57:36 GMT', 'Content-Length': '132'} 
+ body={"status":"true","data":{"id":10492725,"first_name":"Alisha","middle_name":"Anjum","last_name":"Dola","date_of_birth":"01-01-2000"}} 
+ </msg>
+<msg time="2024-11-07T10:57:40.554587" level="INFO">C:\Users\Msi\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'thetestingworldapi.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2024-11-07T10:57:40.556461" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>my_session</arg>
+<arg>/api/studentsDetails/10492725</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.209431" elapsed="0.347248"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.558097" elapsed="0.002716"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.561978" elapsed="0.001473"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.headers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.564262" elapsed="0.001113"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:40.566692" level="INFO">${status_code} = 200</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.565913" elapsed="0.000807"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.566909" elapsed="0.000146"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-07T10:57:40.567690" level="INFO">${payload} = {"status":"true","data":{"id":10492725,"first_name":"Alisha","middle_name":"Anjum","last_name":"Dola","date_of_birth":"01-01-2000"}}</msg>
+<var>${payload}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.567345" elapsed="0.000363"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${payload}</arg>
+<arg>"first_name":"Alisha"</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.567832" elapsed="0.000104"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-11-07T10:57:40.568360" level="INFO">${contenttypevalue} = application/json; charset=utf-8</msg>
+<var>${contenttypevalue}</var>
+<arg>${response.headers}</arg>
+<arg>Content-Type</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.568076" elapsed="0.000299"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${contenttypevalue}</arg>
+<arg>application/json; charset=utf-8</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-07T10:57:40.568469" elapsed="0.000095"/>
+</kw>
+<status status="PASS" start="2024-11-07T10:57:40.207880" elapsed="0.360927"/>
+</test>
+<status status="PASS" start="2024-11-07T10:57:34.742384" elapsed="5.827322"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="All Test Cases">All Test Cases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
